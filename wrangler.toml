@@ -1,0 +1,14 @@
+# Cloudflare Pages 配置文件
+# 用于部署网站和 AI 助手 API
+
+name = "wangshuai-website"
+compatibility_date = "2024-01-01"
+
+# Pages Functions 环境变量设置
+# 在部署后通过 Cloudflare Dashboard 设置环境变量：
+# Settings -> Environment variables -> Add variable
+# 变量名: DASHSCOPE_API_KEY
+# 变量值: 你的阿里云百炼 API Key
+
+# 或者通过 CLI 设置：
+# wrangler pages secret put DASHSCOPE_API_KEY --project-name=wangshuai-website
